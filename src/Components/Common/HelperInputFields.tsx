@@ -589,7 +589,7 @@ export const LegacyPhoneNumberField = (props: any) => {
   const onChangeHandler = debounce(onChange, 500);
 
   useEffect(() => {
-    setMaxLength(() => (value?.slice(4, 8) === "1800" ? 16 : 15));
+    setMaxLength(() => (value?.slice(4, 8) === "1800" ? 16 : 17));
   }, [value]);
 
   const handleChange = (
